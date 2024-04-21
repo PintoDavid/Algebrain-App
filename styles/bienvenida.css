@@ -18,6 +18,9 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "Anek Latin", sans-serif;
+  text-align: center;
+  color: black;
 }
 .out-top {
   animation: rotate 20s linear infinite;
@@ -38,7 +41,7 @@
 body {
   background-color: #edf3e6;
 }
-svg {
+.svg-fondo {
   position: fixed;
   top: 0;
   left: 0;
@@ -60,15 +63,11 @@ svg {
   -ms-user-select: none;
   pointer-events: none; /* Evita eventos del mouse */
 }
-p {
-  font-family: "Anek Latin", sans-serif;
-  text-align: center;
-}
 footer {
-  z-index: 1;
+  display: flex;
+  justify-content: center;
   background-color: #000000a9;
   color: #eaeaea;
-  font-size: large;
   padding: 15px;
   position: fixed;
   bottom: 0;
@@ -84,14 +83,7 @@ footer {
   position: fixed;
   top: 100px;
 }
-.logo > p {
-  text-align: left;
-  font-weight: 900;
-  font-size: xx-large;
-}
-.green-color {
-  color: #39c821;
-}
-a {
-  color: black;
+.fondo-rectangulo {
+  width: 100%;
+  height: 100%;
 }
