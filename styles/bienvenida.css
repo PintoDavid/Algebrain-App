@@ -36,7 +36,6 @@
   }
   body {
     background-color: #EDF3E6;
-    z-index: -1;
   }
   svg {
     position: fixed;
@@ -44,7 +43,7 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    filter: blur(4px);
+    filter: blur(5px);
   }
   .texto-espera {
     position: fixed;
@@ -68,7 +67,7 @@
     z-index: 1;
     background-color: #000000a9;
     color: #eaeaea;
-    font-size: larger;
+    font-size: large;
     padding: 15px;
     position: fixed;
     bottom: 0;
@@ -79,5 +78,17 @@
     -moz-user-select: none;
     -ms-user-select: none;
     pointer-events: none; /* Evita eventos del mouse */
+  }
+  .logo{
+    position: fixed;
+    top: 100px;
+  }
+  .logo > p{
+    text-align: left;
+    font-weight: 900;
+    font-size: xx-large;
+  }
+  .green-color{
+    color:#39C821;
   }
   
