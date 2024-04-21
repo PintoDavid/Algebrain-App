@@ -79,5 +79,6 @@
     -moz-user-select: none;
     -ms-user-select: none;
     pointer-events: none; /* Evita eventos del mouse */
+    /*prevencion testeos*/
   }
   
