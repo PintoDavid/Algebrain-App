@@ -35,6 +35,9 @@ footer button {
   cursor: pointer;
   margin: 0 10px;
 }
+#Texto {
+  text-align: center;
+}
 
 #lessonContent {
   padding: 20px;

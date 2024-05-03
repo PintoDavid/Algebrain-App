@@ -1,3 +1,11 @@
+const lecciones=[
+  {
+      0: "Introducción al sistema de ecuaciones lineales.",
+      1: "Es una técnica fundamental en álgebra lineal para resolver sistemas de ecuaciones lineales. Su objetivo es transformar un sistema de ecuaciones lineales en otro equivalente pero más simple, hasta llegar a una forma escalonada o reducida que permita fácilmente encontrar la solución.",
+      2: "../img/IMG1.png"
+  }
+  
+]
 const lessons = [
   { type: "video", content: "Insertar video aquí" },
   { type: "texto", content: "Insertar texto aquí" },
@@ -17,9 +25,12 @@ const lessonCounter = document.getElementById("lessonCounter");
 const lessonContent = document.getElementById("lessonContent");
 const nextButton = document.getElementById("nextButton");
 const confirmButton = document.getElementById("confirmButton");
+const titulo = document.getElementById("Titulo")
+const contenido = document.getElementById("Texto")
 
-function updateLessonContent() {
-  const lesson = lessons[currentLesson];
+titulo.textContent = lecciones[0][0];
+function updateLessonContent(valor) {
+  /* const lesson = lessons[currentLesson];
   lessonCounter.textContent = `Lección ${currentLesson + 1} de ${
     lessons.length
   }`;
@@ -53,7 +64,8 @@ function updateLessonContent() {
     lessonContent.textContent = lesson.content;
     nextButton.disabled = false;
     confirmButton.style.display = "none";
-  }
+  } */
+  contenido.textContent = lecciones[valor][1]
 }
 
 document.getElementById("backButton").addEventListener("click", () => {
@@ -82,14 +94,14 @@ function hideBackMenuPopup() {
 document.getElementById("prevButton").addEventListener("click", () => {
   if (currentLesson > 0) {
     currentLesson--;
-    updateLessonContent();
+    updateLessonContent(currentLesson);
   }
 });
 
 document.getElementById("nextButton").addEventListener("click", () => {
   if (currentLesson < lessons.length - 1) {
     currentLesson++;
-    updateLessonContent();
+    updateLessonContent(currentLesson);
   }
 });
 
@@ -124,4 +136,4 @@ document.getElementById("closePopupButton").addEventListener("click", () => {
   popup.style.display = "none";
 });
 
-updateLessonContent();
+updateLessonContent(0);
