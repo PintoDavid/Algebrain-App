@@ -57,10 +57,27 @@ function updateLessonContent() {
 }
 
 document.getElementById("backButton").addEventListener("click", () => {
-  // Implementa la acción para regresar al menú
-  // Por ejemplo:
-  // window.location.href = 'menu.html';
+  showBackMenuPopup();
 });
+
+document.getElementById("cancelBackButton").addEventListener("click", () => {
+  hideBackMenuPopup();
+});
+
+document.getElementById("confirmBackButton").addEventListener("click", () => {
+  window.location.href = "seleccion_temas.html";
+  hideBackMenuPopup();
+});
+
+function showBackMenuPopup() {
+  const backMenuPopup = document.getElementById("backMenuPopup");
+  backMenuPopup.style.display = "block";
+}
+
+function hideBackMenuPopup() {
+  const backMenuPopup = document.getElementById("backMenuPopup");
+  backMenuPopup.style.display = "none";
+}
 
 document.getElementById("prevButton").addEventListener("click", () => {
   if (currentLesson > 0) {

@@ -8,8 +8,8 @@
   </head>
   <body>
     <header>
-      <h1>Nombre del Curso</h1>
       <button id="backButton">Regresar al Menú</button>
+      <h1>Nombre del Curso</h1>
     </header>
 
     <div id="lessonContent">
@@ -24,8 +24,19 @@
         Confirmar respuesta
       </button>
     </footer>
-
-    <!-- Ventana emergente personalizada -->
+    <!-- Ventana emergente personalizada para regresar al menú -->
+    <div id="backMenuPopup" class="popup">
+      <div class="popup-content">
+        <span>
+          ¿Estás seguro de regresar? ¡Podrías perder todo tu progreso!
+        </span>
+        <div class="popup-buttons">
+          <button id="cancelBackButton">Cancelar</button>
+          <button id="confirmBackButton">Aceptar</button>
+        </div>
+      </div>
+    </div>
+    <!-- Ventana emergente personalizada para respuestas de selección múltiple -->
     <div id="customPopup" class="popup">
       <div class="popup-content">
         <span id="popupMessage"></span>
