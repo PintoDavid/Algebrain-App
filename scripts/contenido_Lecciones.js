@@ -57,17 +57,9 @@ function updateLessonContent() {
 }
 
 document.getElementById("backButton").addEventListener("click", () => {
-  // Mostrar ventana emergente (popup)
-  if (
-    confirm(
-      "¿Está seguro que desea regresar al menú? Se perderá el progreso actual."
-    )
-  ) {
-    // Redireccionar al usuario si confirma
-    window.location.href = "tema1_leccion1de4.html";
-  } else {
-    // No hacer nada si el usuario cancela
-  }
+  // Implementa la acción para regresar al menú
+  // Por ejemplo:
+  // window.location.href = 'menu.html';
 });
 
 document.getElementById("prevButton").addEventListener("click", () => {
@@ -92,15 +84,27 @@ document.getElementById("confirmButton").addEventListener("click", () => {
     const selectedValue = selectedOption.value;
     const lesson = lessons[currentLesson];
     if (selectedValue === lesson.answer) {
-      alert("¡Respuesta correcta!");
+      showPopup("¡Respuesta correcta!");
       nextButton.disabled = false;
       correctAnswerSelected = true;
     } else {
-      alert("Respuesta incorrecta. Por favor, inténtalo de nuevo.");
+      showPopup("Respuesta incorrecta. Por favor, inténtalo de nuevo.");
     }
   } else {
-    alert("Por favor, selecciona una respuesta.");
+    showPopup("Por favor, selecciona una respuesta.");
   }
+});
+
+function showPopup(message) {
+  const popup = document.getElementById("customPopup");
+  const popupMessage = document.getElementById("popupMessage");
+  popupMessage.textContent = message;
+  popup.style.display = "block";
+}
+
+document.getElementById("closePopupButton").addEventListener("click", () => {
+  const popup = document.getElementById("customPopup");
+  popup.style.display = "none";
 });
 
 updateLessonContent();
