@@ -2,7 +2,7 @@ const lecciones=[
   {
       0: "Introducción al sistema de ecuaciones lineales.",
       1: "Es una técnica fundamental en álgebra lineal para resolver sistemas de ecuaciones lineales. Su objetivo es transformar un sistema de ecuaciones lineales en otro equivalente pero más simple, hasta llegar a una forma escalonada o reducida que permita fácilmente encontrar la solución.",
-      2: "../img/IMG1.png"
+      2: "./img/IMG1.png"
   }
   
 ]
@@ -27,6 +27,11 @@ const nextButton = document.getElementById("nextButton");
 const confirmButton = document.getElementById("confirmButton");
 const titulo = document.getElementById("Titulo")
 const contenido = document.getElementById("Texto")
+const imgT = document.getElementById("imgT")
+const opt1 =document.getElementById("opt1")
+const opt2 =document.getElementById("opt2")
+const opt3 =document.getElementById("opt3")
+const opt4 =document.getElementById("opt4")
 
 titulo.textContent = lecciones[0][0];
 function updateLessonContent(valor) {
@@ -66,6 +71,7 @@ function updateLessonContent(valor) {
     confirmButton.style.display = "none";
   } */
   contenido.textContent = lecciones[valor][1]
+  imgT.src =lecciones[valor][2]
 }
 
 document.getElementById("backButton").addEventListener("click", () => {
@@ -135,5 +141,19 @@ document.getElementById("closePopupButton").addEventListener("click", () => {
   const popup = document.getElementById("customPopup");
   popup.style.display = "none";
 });
+
+//botones
+opt1.addEventListener('click', ()=>{
+  alert('¡Hiciste clic en el botón!');
+})
+opt2.addEventListener('click', ()=>{
+  alert('¡Hiciste clic en el botón!');
+})
+opt3.addEventListener('click', ()=>{
+  alert('¡Hiciste clic en el botón!');
+})
+opt4.addEventListener('click', ()=>{
+  alert('¡Hiciste clic en el botón!');
+})
 
 updateLessonContent(0);
