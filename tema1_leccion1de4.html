@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="./styles/lecciones_UI.css" />
   </head>
   <body>
-    <header>
-      <button id="backButton">Regresar al Menú</button>
-      <h1 id="Titulo">Nombre del Curso</h1#>
-    </header>
-
+    
+  <header>
+    <button id="backButton">Regresar al Menú</button>
+    <h1 id="Titulo">Nombre del Curso</h1#>
+  </header>
     <div id="lessonContent">
       <!-- Contenido de la lección (se actualizará dinámicamente con JavaScript) -->
       <!--Texto de sugerencia -->
@@ -24,35 +24,36 @@
       <button id="opt3"></button>
       <button id="opt4"></button>
     </div>
-
-    <footer>
-      <button id="prevButton">Anterior</button>
-      <span id="lessonCounter">Lección X de Y</span>
-      <button id="nextButton">Siguiente</button>
-      <button id="confirmButton" style="display: none">
-        Confirmar respuesta
-      </button>
-    </footer>
-    <!-- Ventana emergente personalizada para regresar al menú -->
-    <div id="backMenuPopup" class="popup">
-      <div class="popup-content">
-        <span>
-          ¿Estás seguro de regresar? ¡Podrías perder todo tu progreso!
-        </span>
-        <div class="popup-buttons">
-          <button id="cancelBackButton">Cancelar</button>
-          <button id="confirmBackButton">Aceptar</button>
-        </div>
-      </div>
-    </div>
-    <!-- Ventana emergente personalizada para respuestas de selección múltiple -->
-    <div id="customPopup" class="popup">
-      <div class="popup-content">
-        <span id="popupMessage"></span>
-        <button id="closePopupButton">Cerrar</button>
-      </div>
-    </div>
-
-    <script src="./scripts/contenido_Lecciones.js"></script>
   </body>
+  
+
+  <footer>
+    <button id="prevButton">Anterior</button>
+    <span id="lessonCounter">Lección X de Y</span>
+    <button id="nextButton">Siguiente</button>
+    <button id="confirmButton" style="display: none">
+      Confirmar respuesta
+    </button>
+  </footer>
+  <!-- Ventana emergente personalizada para regresar al menú -->
+  <div id="backMenuPopup" class="popup">
+    <div class="popup-content">
+      <span>
+        ¿Estás seguro de regresar? ¡Podrías perder todo tu progreso!
+      </span>
+      <div class="popup-buttons">
+        <button id="cancelBackButton">Cancelar</button>
+        <button id="confirmBackButton">Aceptar</button>
+      </div>
+    </div>
+  </div>
+  <!-- Ventana emergente personalizada para respuestas de selección múltiple -->
+  <div id="customPopup" class="popup">
+    <div class="popup-content">
+      <span id="popupMessage"></span>
+      <button id="closePopupButton">Cerrar</button>
+    </div>
+  </div>
+
+  <script src="./scripts/contenido_Lecciones.js"></script>    
 </html>
