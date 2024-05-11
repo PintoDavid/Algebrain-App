@@ -13,9 +13,9 @@
   }*/
 const lecciones = [
   {
-    0: "Lección 1: Definición del sistema de ecuaciones lineales",
-    1: "Es una técnica fundamental en álgebra lineal para resolver sistemas de ecuaciones lineales. Su objetivo es transformar un sistema de ecuaciones lineales en otro equivalente pero más simple, hasta llegar a una forma escalonada o reducida que permita fácilmente encontrar la solución.",
-    2: "https://www.youtube.com/embed/p2AIFY1b9qk?si=uJVwmLQ_Sq6iP_OL",
+    0: "Lección 2: Multiplicación de matrices y sus propiedades - Definición de una matriz",
+    1: "Una matriz organiza datos de manera bidimensional en filas y columnas. Puedes pensar en una matriz como una tabla rectangular de números, símbolos o expresiones algebraicas dispuestas en filas y columnas.",
+    2: "https://www.youtube.com/embed/MJdO7ZkgOzo?si=fH7PrsOjOfePo1WI",
     3: {
       0: 1,
       1: 10,
@@ -25,21 +25,21 @@ const lecciones = [
     4: 4,
   },
   {
-    0: "Lección 1: Definición del sistema de ecuaciones lineales",
+    0: "Lección 2: Multiplicación de matrices y sus propiedades - Definición de una matriz",
+    1: "Resolver las siguientes matrices:",
+    2: "./resources/images/Problemas/Pagina_3.2/Ejercicio_3.2_1.png",
+    3: {
+      0: 1,
+      1: 10,
+      2: 999,
+      3: 100,
+    },
+    4: 4,
+  },
+  {
+    0: "Lección 2: Multiplicación de matrices y sus propiedades - Definición de una matriz",
     1: "En los siguientes ejercicios, resuelva el sistema lineal dado por medio del método de eliminación.",
-    2: "./resources/images/Problemas/Pagina_3.1/Ejercicio_3.1_1.png",
-    3: {
-      0: 1,
-      1: 10,
-      2: 999,
-      3: 100,
-    },
-    4: 4,
-  },
-  {
-    0: "Lección 1: Definición del sistema de ecuaciones lineales",
-    1: "En el siguiente sistema lineal, resolver lo siguiente:",
-    2: "./resources/images/Problemas/Pagina_3.1/Ejercicio_3.1_2.png",
+    2: "./resources/images/Problemas/Pagina_3.2/Ejercicio_3.2_2.png",
     3: {
       0: 1,
       1: 10,

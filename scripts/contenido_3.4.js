@@ -13,9 +13,9 @@
   }*/
 const lecciones = [
   {
-    0: "Lección 1: Definición del sistema de ecuaciones lineales",
-    1: "Es una técnica fundamental en álgebra lineal para resolver sistemas de ecuaciones lineales. Su objetivo es transformar un sistema de ecuaciones lineales en otro equivalente pero más simple, hasta llegar a una forma escalonada o reducida que permita fácilmente encontrar la solución.",
-    2: "https://www.youtube.com/embed/p2AIFY1b9qk?si=uJVwmLQ_Sq6iP_OL",
+    0: "Lección 4: Solución de sistemas de ecuaciones lineales",
+    1: "Los métodos para resolver sistemas de ecuaciones lineales son técnicas matemáticas utilizadas para encontrar las soluciones de un conjunto de ecuaciones lineales simultáneas. Estos métodos pueden variar en complejidad y eficiencia dependiendo de las características específicas del sistema y las preferencias de la persona.",
+    2: "https://www.youtube.com/embed/p2AIFY1b9qk?si=m_v06liUj9F4eJIm",
     3: {
       0: 1,
       1: 10,
@@ -25,9 +25,9 @@ const lecciones = [
     4: 4,
   },
   {
-    0: "Lección 1: Definición del sistema de ecuaciones lineales",
-    1: "En los siguientes ejercicios, resuelva el sistema lineal dado por medio del método de eliminación.",
-    2: "./resources/images/Problemas/Pagina_3.1/Ejercicio_3.1_1.png",
+    0: "Lección 4: Solución de sistemas de ecuaciones lineales",
+    1: "Resolver el suiente sistema de ecuaciones mediante cualquier metodo visto:",
+    2: "./resources/images/Problemas/Pagina_3.4/Ejercicio_3.4_1.png",
     3: {
       0: 1,
       1: 10,
@@ -37,9 +37,9 @@ const lecciones = [
     4: 4,
   },
   {
-    0: "Lección 1: Definición del sistema de ecuaciones lineales",
-    1: "En el siguiente sistema lineal, resolver lo siguiente:",
-    2: "./resources/images/Problemas/Pagina_3.1/Ejercicio_3.1_2.png",
+    0: "Lección 4: Solución de sistemas de ecuaciones lineales",
+    1: "Resolver el suiente sistema de ecuaciones mediante cualquier metodo visto:",
+    2: "./resources/images/Problemas/Pagina_3.4/Ejercicio_3.4_2.png",
     3: {
       0: 1,
       1: 10,
