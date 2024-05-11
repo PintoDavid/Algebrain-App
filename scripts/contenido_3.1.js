@@ -41,7 +41,6 @@ let currentLesson = 0;
 let correctAnswerSelected = false;
 
 const lessonCounter = document.getElementById("lessonCounter");
-const lessonContent = document.getElementById("lessonContent");
 const nextButton = document.getElementById("nextButton");
 const confirmButton = document.getElementById("confirmButton");
 const titulo = document.getElementById("Titulo")
@@ -89,6 +88,8 @@ function updateLessonContent(valor) {
     nextButton.disabled = false;
     confirmButton.style.display = "none";
   } */
+  
+  lessonCounter.textContent = `Lección ${currentLesson+1} de ${lecciones.length}`;
   contenido.textContent = lecciones[valor][1]
   imgT.src = lecciones[valor][2]
   //texto 
@@ -99,20 +100,28 @@ function updateLessonContent(valor) {
 
   //botones
   opt1.addEventListener('click', () => {
+    correctAnswerSelected=false;
     if (lecciones[valor][4] !== 1) { alert('¡Hiciste clic en el botón!'); return; }
     alert('Solucionado');
+    correctAnswerSelected=true;
   })
   opt2.addEventListener('click', () => {
+    correctAnswerSelected=false;
     if (lecciones[valor][4] !== 2) { alert('¡Hiciste clic en el botón!'); return; }
     alert('Solucionado');
+    correctAnswerSelected=true;
   })
   opt3.addEventListener('click', () => {
+    correctAnswerSelected=false;
     if (lecciones[valor][4] !== 3) { alert('¡Hiciste clic en el botón!'); return; }
     alert('Solucionado');
+    correctAnswerSelected=true;
   })
   opt4.addEventListener('click', () => {
+    correctAnswerSelected=false;
     if (lecciones[valor][4] !== 4) { alert('¡Hiciste clic en el botón!'); return; }
     alert('Solucionado');
+    correctAnswerSelected=true;
   })
 }
 
@@ -147,10 +156,11 @@ document.getElementById("prevButton").addEventListener("click", () => {
 });
 
 document.getElementById("nextButton").addEventListener("click", () => {
-  if (currentLesson < lessons.length - 1) {
+  if (currentLesson < lecciones.length - 1 && correctAnswerSelected===true) {
     currentLesson++;
     updateLessonContent(currentLesson);
   }
+  if(correctAnswerSelected!==true) alert('Por favor seleciona la respuesta correcta')
 });
 
 document.getElementById("confirmButton").addEventListener("click", () => {
@@ -184,5 +194,4 @@ document.getElementById("closePopupButton").addEventListener("click", () => {
   popup.style.display = "none";
 });
 
-
-updateLessonContent(0);
+updateLessonContent(currentLesson)
