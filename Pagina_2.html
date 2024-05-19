@@ -67,4 +67,55 @@
   .contenedor p {
     margin: 20px;
   }
+  * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Anek Latin", sans-serif;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to right, #684cf9, #060448);
+        height: 100vh;
+        padding: 20px;
+      }
+
+      a {
+        width: 60%;
+        height: 100px;
+        margin-bottom: 20px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      a:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      }
+
+      .contenedor {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .contenedor p {
+        margin: 20px;
+        font-size: 1.2em;
+        font-weight: 600;
+        color: #333;
+      }
 </style>
