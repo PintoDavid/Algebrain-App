@@ -28,6 +28,8 @@
         </div>
       </div>
     </a>
+    <p>Definición del sistema de ecuaciones lineales</p>
+    <br>
     <a href="Pagina_3.2.html">
       <div id="sombra">
         <div id="circulo">
@@ -35,6 +37,8 @@
         </div>
       </div>
     </a>
+    <p>Definición de una matriz</p>
+    <br>
     <a href="Pagina_3.3.html">
       <div id="sombra">
         <div id="circulo">
@@ -42,6 +46,8 @@
         </div>
       </div>
     </a>
+    <p>  Proceso de multiplicación de matrices </p>
+    <br>
     <a href="Pagina_3.4.html">
       <div id="sombra">
         <div id="circulo">
@@ -49,6 +55,8 @@
         </div>
       </div>
     </a>
+    <p>Solución de sistemas de ecuaciones lineales</p>
+    <br>
   </body>
 </html>
 <style>
@@ -102,9 +110,13 @@
     align-items: center;
     justify-content: center;
     width: 95%;
-    height: 92%;
+    height: 95%;
     border-radius: 10000px;
-    background-color: #d1ffd0;
+    background-color: #84fe82;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #333;
+    transition: transform 0.3s;
   }
 
   #sombra {
@@ -113,5 +125,44 @@
     border-radius: 10000px;
     background-color: #80a07f;
     margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
   }
+
+  * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Anek Latin", sans-serif;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(to right, #55b1d0, #1822d0);
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      header p {
+        font-size: 1.5em;
+        font-weight: 600;
+        color: #000000;
+      }
+
+      .sombra:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      }
+
+      .sombra:hover .circulo {
+        transform: scale(1.1);
+      }
+      p{
+        font-size: 1.2em;
+        font-weight: 600;
+        color: #000000;
+        justify-content:right
+      }
 </style>
