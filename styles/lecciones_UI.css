@@ -124,21 +124,21 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
   grid-template-rows: repeat(2, 1fr); /* Dos filas de igual tamaño */
-  margin-top: 70px;
+  margin-top: 20px;
 }
-@media (min-width: 900px) {
+@media (min-width: 700px) {
   #opt{
     width: 60%;
     height: 200px;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 700px) {
   #opt{
     width: 80%;
     height: 200px;
   }
   h1{
-    font-size: 24px;
+    font-size: 30px;
   }
 }
 #opt button{
@@ -154,5 +154,5 @@ footer {
   background-color: #57758A;
 }
 #imgT{
-  width: 300px;
+  width: 320px;
 }
