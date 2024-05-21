@@ -93,7 +93,7 @@ function updateLessonContent(valor) {
 correctAnswerSelected = false;
 opt1.addEventListener("click", () => {
   if (lecciones[currentLesson][4] !== 1) {
-    alert("¡Hiciste clic en el botón!");
+    alert("Respuesta incorrecta, vuelve a intentar");
     return 0;
   }
   alert("Solucionado");
@@ -101,7 +101,7 @@ opt1.addEventListener("click", () => {
 });
 opt2.addEventListener("click", () => {
   if (lecciones[currentLesson][4] !== 2) {
-    alert("¡Hiciste clic en el botón!");
+    alert("Respuesta incorrecta, vuelve a intentar");
     return 0;
   }
   alert("Solucionado");
@@ -109,7 +109,7 @@ opt2.addEventListener("click", () => {
 });
 opt3.addEventListener("click", () => {
   if (lecciones[currentLesson][4] !== 3) {
-    alert("¡Hiciste clic en el botón!");
+    alert("Respuesta incorrecta, vuelve a intentar");
     return 0;
   }
   alert("Solucionado");
@@ -117,7 +117,7 @@ opt3.addEventListener("click", () => {
 });
 opt4.addEventListener("click", () => {
   if (lecciones[currentLesson][4] !== 4) {
-    alert("¡Hiciste clic en el botón!");
+    alert("Respuesta incorrecta, vuelve a intentar");
     return 0;
   }
   alert("Solucionado");
